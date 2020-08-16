@@ -25,14 +25,17 @@
                 style="@style/TextContent.Small.White"
                 android:layout_gravity="bottom"
                 android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
                 android:layout_marginBottom="16dp"
                 android:background="#4D000000"
                 android:drawableStart="@drawable/ic_collections_white_18dp"
+                android:drawableLeft="@drawable/ic_collections_white_18dp"
                 android:drawablePadding="4dp"
                 android:gravity="center_vertical"
                 android:padding="8dp"
                 android:text="@string/dummy_photos"
-                android:textColor="@android:color/white" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
         </FrameLayout>
 
         <TextView
@@ -132,14 +135,18 @@
 
             <TextView
                 style="@style/TextContent"
-                android:layout_toEndOf="@+id/profile_image"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/profile_image"
                 android:layout_toRightOf="@id/profile_image"
-                android:text="@string/my_name"
-                android:textColor="@android:color/black" />
+                android:text="@string/my_name" />
         </RelativeLayout>
 
         <Button
-            style="@style/ButtonGeneral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
             android:text="@string/buy" />
     </LinearLayout>
 </ScrollView>
